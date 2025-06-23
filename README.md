@@ -9,6 +9,18 @@ generate it inside the Docker container with Composer.
 - [Docker](https://docs.docker.com/get-docker/) (20+)
 - [Docker Compose](https://docs.docker.com/compose/) v2
 
+## Quick Start
+
+You can spin up the local environment with the provided `setup.sh` script. It
+builds the Docker images, installs the Symfony skeleton if needed and starts the
+services.
+
+```bash
+./setup.sh
+```
+
+This script performs the same actions as the manual steps listed below.
+
 ## Initial Setup
 
 1. Build the PHP container:
