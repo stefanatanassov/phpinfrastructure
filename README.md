@@ -40,6 +40,12 @@ generate it inside the Docker container with Composer.
 
    Visit <http://localhost:8000> in your browser.
 
+### Quick Start Script
+
+Instead of performing the above steps manually, execute `./start.sh` from the
+project root. The script builds the containers, installs the Symfony skeleton if
+it does not exist, and then starts the services in the background.
+
 ## Database Configuration
 
 The `db` service uses MySQL 8 and exposes port `3306`. Default credentials are
