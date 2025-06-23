@@ -1,8 +1,9 @@
 # Symfony Docker Boilerplate
 
 This repository provides a minimal Docker setup for running a Symfony application
-with MySQL and PHP 8.4. The actual Symfony skeleton is not committed; you can
-generate it inside the Docker container with Composer.
+with MySQL and PHP 8.4. The actual Symfony skeleton is not committed; run the
+included `setup.sh` script inside the Docker container to install it
+automatically into the existing directory.
 
 ## Prerequisites
 
@@ -20,11 +21,11 @@ generate it inside the Docker container with Composer.
 2. Install the Symfony skeleton (run once):
 
    ```bash
-   docker compose run --rm php composer create-project symfony/skeleton .
+   docker compose run --rm php bash setup.sh
    ```
 
-   This command downloads the latest stable Symfony version into the current
-   directory.
+   The script downloads the latest Symfony skeleton into a temporary directory
+   and copies it into your project automatically.
 
 3. Start the services:
 
